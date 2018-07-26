@@ -21,8 +21,8 @@ class App{
         
 
         //add bootstrap to admin dashboard    
-        add_action( 'admin_enqueue_scripts', [$this, 'dev84_admin_styles']);
-        add_action('wp_enqueue_scripts', [$this, 'dev84_admin_styles']);
+        add_action( 'admin_enqueue_scripts', [$this, 'dev_admin_styles']);
+        add_action('wp_enqueue_scripts', [$this, 'dev_admin_styles']);
         
         $metabox = new MetaBox();
         $metabox->init();
@@ -227,7 +227,7 @@ class App{
 
 
 
-function dev84_admin_styles() {
+public function dev_admin_styles() {
     $PLUGIN_URL= plugin_dir_url(__FILE__);
     wp_enqueue_style('bootstrap_css',$PLUGIN_URL.'/assets/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css', false);
     wp_enqueue_script('bootstrap_js',$PLUGIN_URL.'/assets/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js', false );
