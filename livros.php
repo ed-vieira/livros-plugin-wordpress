@@ -4,7 +4,7 @@
  * Plugin Name: Livros Plugin
  * Plugin URI: 
  * Description: plugin para administração de coleções de livros
- * Author: developer
+ * Author: Ed Vieira
  * Version: 1.0
  * Author URI:
  * 
